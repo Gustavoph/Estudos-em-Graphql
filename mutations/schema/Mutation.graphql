@@ -5,18 +5,11 @@ type Mutation{
     ): Usuario!
 
     excluirUsuario(
-        filtro : UsuarioFiltro! 
+        filtro: UsuarioFiltro!, 
         ): Usuario
 
     alterarUsuario(
         filtro: UsuarioFiltro!,
         dados: UsuarioInput!
     ) : Usuario
-
-    # Mutation de perfil
-    novoPerfil(
-        id: Int,
-        nome: String
-    ): Perfil!
-
 }
