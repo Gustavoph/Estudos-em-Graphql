@@ -1,11 +1,3 @@
-type Usuarios{
-    id: Int,
-    name: String,
-    email: String,
-    idade: Int
-}
+#import Usuario.* from 'Usuario.graphql'
+#import Query from 'Query.graphql'
 
-
-type Query{
-    Usuarios: Usuarios!
-}
