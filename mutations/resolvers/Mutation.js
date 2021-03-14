@@ -6,13 +6,12 @@ function indiceUsuario(filtro) {
     if (id) {
         return usuarios.findIndex(u => u.id === id);
     } else if (email) {
-        return usuarios.findIndex(u => u.id === email);
+        return usuarios.findIndex(u => u.email === email);
     }
     return -1
 }
 
 module.exports = {
-    // { dados }
     novoUsuario(_, { nome, email, idade }) {
         const emailExistente = usuarios
             .some(u => u.email === email)
