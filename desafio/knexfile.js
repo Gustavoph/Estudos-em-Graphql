@@ -1,11 +1,9 @@
-// Update with your config settings.
-
 module.exports = {
   client: 'mysql',
   connection: {
-    database: 'desafio-cap-04',
+    database: 'desafio',
     user:     'root',
-    password: '12345678'
+    password: '@rv0re24Xcv'
   },
   pool: {
     min: 2,

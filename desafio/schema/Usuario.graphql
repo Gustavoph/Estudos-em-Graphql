@@ -1,10 +1,5 @@
-type Usuario {
-    id: Int
-    nome: String!
-    email: String!
-    perfis: [Perfil]
-}
 
+#input para utilizar em mutation
 input UsuarioInput {
     nome: String
     email: String
@@ -12,9 +7,17 @@ input UsuarioInput {
     perfis: [PerfilFiltro]
 }
 
-input UsuarioFiltro {
+input PerfilInput {
+    nome: String
+    rotulo: String
+}
+
+#nosso types personalizados
+type Usuario {
     id: Int
-    email: String
+    nome: String!
+    email: String!
+    perfis: [Perfil]
 }
 
 type Perfil {
@@ -23,9 +26,10 @@ type Perfil {
     rotulo: String!
 }
 
-input PerfilInput {
-    nome: String
-    rotulo: String
+#filtros
+input UsuarioFiltro {
+    id: Int
+    email: String
 }
 
 input PerfilFiltro {
