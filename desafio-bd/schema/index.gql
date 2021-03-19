@@ -1,0 +1,5 @@
+#import Query from 'Query.gql'
+#import Usuarios from 'Usuarios.gql'
+#import Perfil from 'Perfis.gql'
+#import Curso from 'Curso.gql'
+#import Mutation from 'Mutation.gql'

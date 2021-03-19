@@ -1,0 +1,5 @@
+type Curso {
+    id: Int
+    nome: String
+    horas: String
+}

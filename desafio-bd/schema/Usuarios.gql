@@ -1,0 +1,22 @@
+input InputUsuario {
+    id: Int
+    nome: String 
+    email: String
+    idade: Int
+    perfil_id: Int
+    curso_id: Int
+}
+
+input FiltroUsuario {
+    id: Int
+    email: String
+}
+
+type Usuario {
+    id: Int!
+    nome: String!
+    email: String!
+    idade: Int
+    perfil: Perfil
+    curso: Curso
+}
